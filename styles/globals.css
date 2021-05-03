@@ -12,6 +12,7 @@
 
   a {
     @apply align-middle;
+    @apply dark:text-white;
   }
 }
 
