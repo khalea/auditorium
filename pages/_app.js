@@ -1,8 +1,12 @@
+import { ThemeProvider } from 'next-themes'
 import '../styles/globals.css'
-// import 'tailwindcss/tailwind.css' // This will remove default styles when uncommented
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return(
+    <ThemeProvider defaultTheme="system">
+      <Component {...pageProps} />
+    </ThemeProvider>
+  ) 
 }
 
 export default MyApp
