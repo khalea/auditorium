@@ -2,6 +2,11 @@
 
 Auditorium is an app where friends can listen to, queue, and vote on music synchronously. 
 
+## Roadmap
+- Provision stages
+- Search Youtube
+- Queue videos
+
 ## Key Pages
 
 - Landing
@@ -19,14 +24,24 @@ Auditorium is an app where friends can listen to, queue, and vote on music synch
 - Voting
 - Chat
 
-### Frontend
-
-
-
 ## Todo
-- [ ] Add Tailwind CSS
+
+### UI
+- [X] Add Tailwind CSS
+- [ ] Edit light/dark themes
+- [ ] Edit Typography
+### Stages
+- [ ] Use sample data to test provisioning Stages (dynamic routing)
+
+
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+
+## References
+
+#### Theming
+- [next-themes](https://github.com/pacocoursey/next-themes)
 
 ## Getting Started
 
