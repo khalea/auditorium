@@ -4,7 +4,7 @@
 
 @layer base {
   h1 {
-    @apply text-2xl; 
+    @apply text-3xl; 
     @apply font-bold;
     @apply align-middle;
     @apply p-4;

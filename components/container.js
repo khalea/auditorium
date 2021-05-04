@@ -57,10 +57,10 @@ export default function Container(props) {
                     )}
                 </button>
 
-                <h1>Auditorium.</h1>
+                <h1 className="font-xl font-extrabold">Auditorium.</h1>
 
                 <NextLink href="/">
-                    <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">Home</a>
+                    <a className="font-lg p-1 sm:p-4 text-gray-900 dark:text-gray-100">Home</a>
                 </NextLink>
 
                 <NextLink href="/stage">
