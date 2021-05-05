@@ -19,7 +19,10 @@ export default function Stage(props) {
 
     const playNext = () => {
         videoData.shift()
-        setCurrentSong(videoData[0].videoId)
+
+        if (videoData.length > 0) {
+            setCurrentSong(videoData[0].videoId)
+        }
     }
     
     return(
@@ -42,3 +45,9 @@ export default function Stage(props) {
     )
 }
 
+/*
+
+ToDo
+- Add message when no songs are in queue
+
+*/
