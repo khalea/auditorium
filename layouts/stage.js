@@ -1,18 +1,35 @@
 
-import styles from '../styles/Home.module.css'
 import Container from '../components/container'
 import Player from '../components/stage/player'
 import Queue from '../components/stage/queue'
 
+import TestQueue from "../data/stage/test-queue.json"
+
+import { useEffect, useState } from 'react'
+
 export default function Stage(props) {
+
+    let videoData = TestQueue
+    
+    const [currentSongId, setCurrentSong] = useState(videoData[0].videoId)
+
+    useEffect(() => {
+        console.log('Using effect')
+    })
+    
     return(
         <Container>
 
                 <h1>{props.title} by {props.owner}</h1>
-                <Player
-                    source="https://www.youtube.com/embed/xqYFU1_SiBo?autoplay=1&fs=0"
-                />
-                <Queue />
+
+                <div className="w-full">
+                    
+                    <Player
+                        videoId={currentSongId}
+                    />
+                    
+                    <Queue data={videoData} />
+                </div>
 
 
         </Container>

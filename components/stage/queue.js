@@ -1,17 +1,17 @@
 import { useState } from "react"
-import TestQueue from "../../data/stage/test-queue.json"
+
 
 export default function queue(props) {
-    let videos = TestQueue
+    let videos = props.data
    
     return (
         <div className="max-w-sm">
             {
                 videos.map(item => {
                     return (
-                        <div className="flex flex-row items-center">
+                        <div key={item.id} className="flex flex-row items-center">
                             <h1 className="text-lg">{item.id}</h1>
-                            <p>{item.url}</p>
+                            <p>{item.videoId}</p>
                         </div>
                     )
                 })
