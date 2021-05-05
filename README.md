@@ -40,6 +40,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## References
 
+- [Axios API](https://axios-http.com/)
+
 #### Theming
 - [next-themes](https://github.com/pacocoursey/next-themes)
 
