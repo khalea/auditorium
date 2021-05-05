@@ -14,8 +14,13 @@ export default function Stage(props) {
     const [currentSongId, setCurrentSong] = useState(videoData[0].videoId)
 
     useEffect(() => {
-        console.log('Using effect')
+        console.log('Mounted, State Changed, or Unmounted')
     })
+
+    const playNext = () => {
+        videoData.shift()
+        setCurrentSong(videoData[0].videoId)
+    }
     
     return(
         <Container>
@@ -26,6 +31,7 @@ export default function Stage(props) {
                     
                     <Player
                         videoId={currentSongId}
+                        onEnd={playNext}
                     />
                     
                     <Queue data={videoData} />
