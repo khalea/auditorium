@@ -2,6 +2,8 @@
 
 Auditorium is an app where friends can listen to, queue, and vote on music synchronously. 
 
+This is inspired by my recent time vibing in (Will Neff)[https://twitter.com/TheWillNeff] & (Hasan Piker's)[https://twitter.com/hasanthehun] Twitch streams. It reminds me of a time in the earlier years of the internet where you could find little chatrooms in odd corners of the web where you could just chill with random folks.  
+
 ## Roadmap
 - Provision stages
 - Search Youtube
