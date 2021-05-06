@@ -2,6 +2,7 @@
 import Container from '../components/container'
 import Player from '../components/stage/player'
 import Queue from '../components/stage/queue'
+import SearchBar from '../components/stage/searchbar'
 
 import TestQueue from "../data/stage/test-queue.json"
 
@@ -36,7 +37,7 @@ export default function Stage(props) {
                         videoId={currentSongId}
                         onEnd={playNext}
                     />
-                    
+                    <SearchBar />
                     <Queue data={videoData} />
                 </div>
 
@@ -49,5 +50,6 @@ export default function Stage(props) {
 
 ToDo
 - Add message when no songs are in queue
+- Initial State (Empty Queue) -- Monitor the size of the queue
 
 */
