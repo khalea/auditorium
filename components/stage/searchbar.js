@@ -1,16 +1,12 @@
-import { Input } from 'postcss'
 import {useState, useEffect} from 'react'
+import { searchVideos } from "../../pages/api/search";
+
 
 export default function SearchBar() {
-
     const [input, setInput] = useState("")
 
     const updateInput = (e) => {
         setInput(e.target.value)
-    }
-
-    const submitQuery = () => {
-        console.log('Button clicked')
     }
 
     return(
@@ -25,7 +21,7 @@ export default function SearchBar() {
                     className="px-4 py-2 border border-gray-300 dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
                 />
 
-                <button onClick={submitQuery}>
+                <button onClick={() => searchVideos(input)}>
                     <svg
                         className="absolute right-3 top-3 h-5 w-5 text-gray-400 dark:text-gray-300"
                         xmlns="http://www.w3.org/2000/svg"
