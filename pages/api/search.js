@@ -5,14 +5,13 @@ const apiKey = process.env.GOOGLE_API_KEY
 
 export const searchVideos = (input) => {
     console.log('Searching for: ' + input)
-    const url = youtubeAPI + input + "&type=video&key=" + tempKey
+    const url = youtubeAPI + input + "&type=video&key=" + apiKey
     console.log(url)
     axios.get(url)
         .then(res => {
             
             let results = JSON.stringify(res.data)
             console.log(results)
-            
             
         })
 
