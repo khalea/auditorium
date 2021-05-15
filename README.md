@@ -4,6 +4,7 @@ Auditorium is an app through which friends can listen to, chat about, and vote o
 
 This is inspired by my recent time vibing in [Will Neff](https://twitter.com/TheWillNeff) & [Hasan Piker's](https://twitter.com/hasanthehun) Twitch streams with other viewers. It reminds me of a time in the earlier years of the internet when you'd find cool little chatrooms in odd corners of the web.
 
+
 This is very much a work progress, and I may not complete it. Though I suppose that shouldn't be surprising to other devs :)
 
 ### General Features 
@@ -36,7 +37,6 @@ This is very much a work progress, and I may not complete it. Though I suppose t
 
 #### Theming
 - [next-themes](https://github.com/pacocoursey/next-themes)
-
 ---
 
 ## Getting Started
