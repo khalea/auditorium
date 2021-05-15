@@ -11,7 +11,7 @@ export default function Player(props) {
     [])
 
     return(
-        <div>
+        <div className="py-4">
             
 
         <ReactPlayer 
@@ -39,6 +39,6 @@ Todo
 - Remove controls in prod
 
 Considerations 
-- How to ensure songs play synchronously for everyone? ie. Some people may log on in the middle of the video. How can I ensure everyone is on the same part of the video? Does SSR solve this?
+- How to ensure songs play synchronously for everyone? ie. Some people may log on in the middle of the video. How can I ensure everyone is on the same part of the video? Does SSR solve this? For now, I may be able to just force sync video when the song changes...
 
 */
