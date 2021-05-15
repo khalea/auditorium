@@ -20,6 +20,6 @@ export const searchVideos = (input) => {
 /*
 
 Example
-https://youtube.googleapis.com/youtube/v3/search?q=hozier&key=AIzaSyCSBDNEwB6ghK9TVr-mjADEzzZkneEaUt0
+https://youtube.googleapis.com/youtube/v3/search?q=hozier&key=
 
 */
