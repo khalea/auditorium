@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const youtubeAPI = "https://youtube.googleapis.com/youtube/v3/search?q="
+const youtubeAPI = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q="
 const apiKey = process.env.NEXT_PUBLIC_GOOGLE_API_KEY
 
 export async function getServerSideProps() {
