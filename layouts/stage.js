@@ -29,19 +29,24 @@ export default function Stage(props) {
     return(
         <Container>
 
-                <h1>{props.title} by {props.owner}</h1>
+            <h1>{props.title} by {props.owner}</h1>
 
-                <div className="w-full">
-                    
-                    <Player
-                        videoId={currentSongId}
-                        onEnd={playNext}
-                    />
-                    <SearchBar />
+                <div className="flex flex-row">
+
+
+                    <div className="">
+                        <Player
+                            videoId={currentSongId}
+                            onEnd={playNext}
+                        />
+
+                        <SearchBar />
+                    </div>
+
                     <Queue data={videoData} />
+
                 </div>
-
-
+                
         </Container>
     )
 }
