@@ -1,7 +1,11 @@
 import axios from 'axios'
 
 const youtubeAPI = "https://youtube.googleapis.com/youtube/v3/search?q="
-const apiKey = process.env.GOOGLE_API_KEY
+const apiKey = process.env.NEXT_PUBLIC_GOOGLE_API_KEY
+
+export async function getServerSideProps() {
+    
+}
 
 export const searchVideos = (input) => {
     console.log('Searching for: ' + input)
