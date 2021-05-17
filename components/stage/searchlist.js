@@ -17,7 +17,7 @@ export default function SearchList(props) {
 
                             <Image 
                                 src={item.snippet.thumbnails.default.url}
-                                alt="Picture of the author"
+                                alt="Music video thumbnail"
                                 width={120}
                                 height={90}
                             />

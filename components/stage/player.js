@@ -6,7 +6,6 @@ export default function Player(props) {
     const vidURL = "https://www.youtube.com/watch?v=" + props.videoId
 
     useEffect(() => {
-        console.log('Player Mounted, State Changed, or Unmounted')
        }, 
     [])
 
@@ -17,7 +16,6 @@ export default function Player(props) {
         <ReactPlayer 
             url={vidURL}
             playing={true}
-            onStart={console.log('Now Playing: ' + vidURL)}
             onEnded={props.onEnd}
             config={{
                 youtube: {
