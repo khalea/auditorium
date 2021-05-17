@@ -16,7 +16,6 @@ export default function SearchContainer() {
         console.log(results)
     }
 
-
     return(
         <div>
 
@@ -27,4 +26,3 @@ export default function SearchContainer() {
     )
 }
 
-// <SearchList />
