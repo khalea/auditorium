@@ -2,33 +2,45 @@
 
     {
         "id": 1,
-        "url": "https://youtube.com/embed/3qqzz9a8pMQ?autoplay=1&fs=0",
-        "videoId": "3qqzz9a8pMQ"
+        "videoId": "3qqzz9a8pMQ",
+        "title": "Grimes - Aeon / Kill V. Maim / Di-Li-Do (Acapella) [Mixed]",
+        "channelTitle": "sef",
+        "thumbnail": "https://i.ytimg.com/vi/3qqzz9a8pMQ/default.jpg"
     },
     {
         "id": 2,
-        "url": "https://www.youtube.com/embed/HlLx7oE7q3I?autoplay=1&fs=0",
-        "videoId": "HlLx7oE7q3I"
+        "videoId": "HlLx7oE7q3I",
+        "title": "Hozier - Dinner & Diatribes (Official Video)",
+        "channelTitle": "HozierVEVO",
+        "thumbnail": "https://i.ytimg.com/vi/Iq5gesj6kmw/default.jpg"
     },
     {
         "id": 3,
-        "url": "https://www.youtube.com/embed/RUQl6YcMalg?autoplay=1&fs=0",
-        "videoId": "RUQl6YcMalg"
+        "videoId": "RUQl6YcMalg",
+        "title": "Billie Eilish - Therefore I Am (Official Music Video)",
+        "channelTitle": "Billie Eilish",
+        "thumbnail": "https://i.ytimg.com/vi/RUQl6YcMalg/default.jpg"
     },
     {
         "id": 4,
-        "url": "https://www.youtube.com/embed/p2Rro6TQgpU?autoplay=1&fs=0",
-        "videoId": "p2Rro6TQgpU"
+        "videoId": "p2Rro6TQgpU",
+        "title": "FKA twigs - home with you",
+        "channelTitle": "FKA twigs",
+        "thumbnail": "https://i.ytimg.com/vi/p2Rro6TQgpU/default.jpg"
     },
     {
         "id": 5,
-        "url": "https://www.youtube.com/embed/286jXjwdst0?autoplay=1&fs=0",
-        "videoId": "286jXjwdst0"
+        "videoId": "286jXjwdst0",
+        "title": "Apashe ft. Instasamka - Uebok (Gotta Run) [Official Video]",
+        "channelTitle": "Kannibalen Records",
+        "thumbnail": "https://i.ytimg.com/vi/gM4xZy39kNE/default.jpg"
     },
     {
         "id": 6,
-        "url": "https://www.youtube.com/embed/xqYFU1_SiBo?autoplay=1&fs=0",
-        "videoId": "xqYFU1_SiBo"
+        "videoId": "xqYFU1_SiBo",
+        "title": "Untitled (2012 Remaster)",
+        "channelTitle": "Interpol",
+        "thumbnail": "https://i.ytimg.com/vi/xqYFU1_SiBo/default.jpg"
     }
 
 ]

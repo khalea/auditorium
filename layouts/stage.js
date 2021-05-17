@@ -15,7 +15,6 @@ export default function Stage(props) {
     const [currentSongId, setCurrentSong] = useState(videoData[0].videoId)
 
     useEffect(() => {
-        console.log('Mounted, State Changed, or Unmounted')
     })
 
     const playNext = () => {
