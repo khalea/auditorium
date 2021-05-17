@@ -3,27 +3,34 @@ import axios from 'axios'
 const youtubeAPI = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q="
 const apiKey = process.env.NEXT_PUBLIC_GOOGLE_API_KEY
 
-export async function getServerSideProps() {
-    
-}
 
 export const searchVideos = (input) => {
-    console.log('Searching for: ' + input)
+    // console.log('Searching for: ' + input)
     const url = youtubeAPI + input + "&type=video&key=" + apiKey
-    console.log(url)
-    axios.get(url)
-        .then(res => {
-            
-            let results = JSON.stringify(res.data)
-            console.log(results)
-            
-        })
+    // console.log(url)
 
+    return axios.get(url)
+        .catch(function (error) {
+            console.log(error)
+        })
 }
+
+
+
+export default axios.create({
+    baseURL: "https://youtube.googleapis.com/youtube/v3/",
+    params: {
+        part: 'snippet',
+        key: apiKey
+    }
+})
 
 /*
 
 Example
 https://youtube.googleapis.com/youtube/v3/search?q=hozier&key=
+
+
+
 
 */

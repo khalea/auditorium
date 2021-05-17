@@ -5,7 +5,7 @@ import Queue from '../components/stage/queue'
 import SearchBar from '../components/stage/searchbar'
 
 import TestQueue from "../data/stage/test-queue.json"
-
+import SearchContainer from '../components/stage/searchcontainer'
 import { useEffect, useState } from 'react'
 
 export default function Stage(props) {
@@ -29,7 +29,7 @@ export default function Stage(props) {
     return(
         <Container>
 
-            <h1>{props.title} by {props.owner}</h1>
+            <h1>{props.title} <span className="font-light">by</span> {props.owner}</h1>
 
                 <div className="flex flex-row">
 
@@ -40,7 +40,7 @@ export default function Stage(props) {
                             onEnd={playNext}
                         />
 
-                        <SearchBar />
+                        <SearchContainer />
                     </div>
 
                     <Queue data={videoData} />

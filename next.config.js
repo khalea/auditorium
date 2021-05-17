@@ -6,6 +6,9 @@ module.exports = {
             headers: securityHeaders
           }
         ];
+      },
+      images: {
+        domains: ['i.ytimg.com']
       }
 }
 

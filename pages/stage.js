@@ -14,8 +14,8 @@ export default function Stage() {
             </Head>
 
             <StageLayout 
-                title="hasanabi offliners"
-                owner="khally.b"
+                title="we all ignore the pit"
+                owner="khalea"
             />
 
             
