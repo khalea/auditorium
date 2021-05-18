@@ -8,10 +8,10 @@ import { useState } from 'react'
 
 export default function Stage(props) {
 
-    const [videoData, updateVideoData] = useState(TestQueue)
-    const [currentSongId, setCurrentSong] = useState(videoData[0].videoId)
+    const [videoData, updateVideoData] = useState([])
+    const [currentSongId, setCurrentSong] = useState(null)
 
-    const playNext = () => {
+    const playNext = () => {        
         videoData.shift()
 
         if (videoData.length > 0) {
@@ -28,31 +28,58 @@ export default function Stage(props) {
             "thumbnail": video.snippet.thumbnails.default.url
         }
         ])
+
+        if (currentSongId == null) {
+            console.log("No song playing yet")
+            setCurrentSong(video.id.videoId)
+        } 
     }
 
-    return (
-        <Container>
-
-            <h1>{props.title} <span className="font-light">by</span> {props.owner}</h1>
-
-            <div className="flex flex-row">
-
-
-                <div className="">
-                    <Player
-                        videoId={currentSongId}
-                        onEnd={playNext}
-                    />
-
-                    <SearchContainer queueFunc={addToQueue} />
+    if (videoData.length > 0) {
+        return (
+            <Container>
+    
+                <h1>{props.title} <span className="font-light">by</span> {props.owner}</h1>
+    
+                <div className="flex flex-row">
+    
+    
+                    <div className="flex flex-col items-center pr-2 w-8/12">
+                        <Player
+                            videoId={currentSongId}
+                            onEnd={playNext}
+                        />
+    
+                        <SearchContainer queueFunc={addToQueue} />
+                    </div>
+    
+                    <Queue data={videoData} />
+    
                 </div>
-
-                <Queue data={videoData} />
-
-            </div>
-
-        </Container>
-    )
+    
+            </Container>
+        )
+    } else {
+        return (
+            <Container>
+    
+                <h1>{props.title} <span className="font-light">by</span> {props.owner}</h1>
+    
+                <div className="flex flex-row">
+    
+    
+                    <div className="">
+                        <div style={{width: '640px', height: '360px'}}></div>
+                        <SearchContainer queueFunc={addToQueue} />
+                    </div>
+    
+                    <Queue data={videoData} />
+    
+                </div>
+    
+            </Container>
+        )
+    }
 }
 
 /*

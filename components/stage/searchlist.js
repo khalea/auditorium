@@ -11,8 +11,6 @@ export default function SearchList(props) {
     return(
         <div className="">
 
-            <h3 className="text-lg font-bold">Results</h3>
-
             {
                 results.map(item => {
                     return (

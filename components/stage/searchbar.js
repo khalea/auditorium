@@ -12,7 +12,7 @@ export default function SearchBar(props) {
     }
 
     return(
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col w-full h-10 my-4">
 
             <div className="relative w-full mb-4">
                 <input

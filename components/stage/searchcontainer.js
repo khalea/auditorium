@@ -14,8 +14,8 @@ export default function SearchContainer(props) {
     }
 
     return(
-        <div>
-
+        <div className="flex flex-col items-start justify-start">
+            <h3 className="text-lg font-bold">Results</h3>
             <SearchBar handleSearch={handleSearch} />
             <SearchList queueFunc={props.queueFunc} data={results}/>
 
@@ -23,3 +23,4 @@ export default function SearchContainer(props) {
     )
 }
 
+// Need to set current song if there is none
