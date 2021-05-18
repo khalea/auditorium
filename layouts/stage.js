@@ -10,11 +10,12 @@ import { useEffect, useState } from 'react'
 
 export default function Stage(props) {
 
-    let videoData = TestQueue
-    
+    let [videoData, updateVideoData] = useState(TestQueue)
+
     const [currentSongId, setCurrentSong] = useState(videoData[0].videoId)
 
     useEffect(() => {
+        console.log(videoData)
     })
 
     const playNext = () => {
@@ -24,28 +25,41 @@ export default function Stage(props) {
             setCurrentSong(videoData[0].videoId)
         }
     }
-    
-    return(
+
+    const addToQueue = (video) => {
+        console.log("addToQueue: ")
+
+        updateVideoData(videoData => [...videoData,
+        {
+            "videoId": video.id.videoId,
+            "title": video.snippet.title,
+            "channelTitle": video.snippet.channelTitle,
+            "thumbnail": video.snippet.thumbnails.default.url
+        }
+        ])
+    }
+
+    return (
         <Container>
 
             <h1>{props.title} <span className="font-light">by</span> {props.owner}</h1>
 
-                <div className="flex flex-row">
+            <div className="flex flex-row">
 
 
-                    <div className="">
-                        <Player
-                            videoId={currentSongId}
-                            onEnd={playNext}
-                        />
+                <div className="">
+                    <Player
+                        videoId={currentSongId}
+                        onEnd={playNext}
+                    />
 
-                        <SearchContainer />
-                    </div>
-
-                    <Queue data={videoData} />
-
+                    <SearchContainer queueFunc={addToQueue} />
                 </div>
-                
+
+                <Queue data={videoData} />
+
+            </div>
+
         </Container>
     )
 }
