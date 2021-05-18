@@ -1,15 +1,7 @@
-import { useEffect, useState } from 'react'
 import Image from 'next/image'
 
 export default function SearchList(props) {
-
-    const [lastSelected, setSelected] = useState({})
-
     let results = props.data
-
-    let handleChange = (e) => {
-
-    }
 
     let handleQueueAdd = (video) => {
         console.log("Clicked add to queue")

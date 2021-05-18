@@ -2,21 +2,14 @@
 import Container from '../components/container'
 import Player from '../components/stage/player'
 import Queue from '../components/stage/queue'
-import SearchBar from '../components/stage/searchbar'
-
 import TestQueue from "../data/stage/test-queue.json"
 import SearchContainer from '../components/stage/searchcontainer'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 export default function Stage(props) {
 
-    let [videoData, updateVideoData] = useState(TestQueue)
-
+    const [videoData, updateVideoData] = useState(TestQueue)
     const [currentSongId, setCurrentSong] = useState(videoData[0].videoId)
-
-    useEffect(() => {
-        console.log(videoData)
-    })
 
     const playNext = () => {
         videoData.shift()
@@ -27,8 +20,6 @@ export default function Stage(props) {
     }
 
     const addToQueue = (video) => {
-        console.log("addToQueue: ")
-
         updateVideoData(videoData => [...videoData,
         {
             "videoId": video.id.videoId,

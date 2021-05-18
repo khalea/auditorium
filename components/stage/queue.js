@@ -1,9 +1,7 @@
-import { useState } from "react"
-
 export default function queue(props) {
    
     return (
-        <div className="max-w-sm overflow-y-scroll">
+        <div className="max-w-sm max-h-96 overflow-y-scroll">
             {
                 props.data.map((item, index) => {
                     return (

@@ -5,9 +5,7 @@ const apiKey = process.env.NEXT_PUBLIC_GOOGLE_API_KEY
 
 
 export const searchVideos = (input) => {
-    // console.log('Searching for: ' + input)
     const url = youtubeAPI + input + "&type=video&key=" + apiKey
-    // console.log(url)
 
     return axios.get(url)
         .catch(function (error) {

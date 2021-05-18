@@ -1,6 +1,4 @@
-import {useState, useEffect} from 'react'
-import { searchVideos } from "../../pages/api/search";
-
+import {useState} from 'react'
 
 export default function SearchBar(props) {
     const [input, setInput] = useState("")
